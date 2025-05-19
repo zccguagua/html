@@ -1,1 +1,187 @@
-<h1>welcom to github html page!!!!!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="baidu-site-verification" content="TGM78uKetd"/>
+    <meta name="Keywords" content="郑程程,zcc"/>
+    <title>登录</title>
+    <link rel="shortcut icon" href="dist/images/icons/zccIcon.ico"/>
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="dist/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/common.css">
+    <script type="text/javascript" src="dist/js/config.js"></script>
+    <script type="text/javascript" src="dist/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="dist/js/love.js"></script>
+    <script type="text/javascript" src="dist/js/zcc_login.js"></script>
+    <style type="text/css">
+        body {
+            /*background-color: #010534;*/
+            background: url("dist/images/login_bg.jpg") no-repeat center center;
+            z-index: 0;
+            background-size: cover;
+            background-attachment: fixed;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .body_box {
+            padding-bottom: 200px;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            /*margin-top: 150px;*/
+            justify-content: center;
+            /*设置自容器沿主轴排列flex-end,center,space-around(均匀分布)，space-between(两端相切)*/
+            align-items: center;
+            /*设置交叉轴(上下轴),flex-end,center,baseline(基线),stretch(拉伸)*/
+            display: flex;
+            flex-direction: row; /*设置排列方向 row-revere,column,column-reverse*/
+            -webkit-display: flex;
+            -webkit-align-items: center;
+            -webkit-justify-content: center;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        .center {
+            margin: auto;
+            background: rgba(255, 255, 255, 0.6);
+            width: 320px;
+            height: 280px;
+            border: 1px solid #bce8f1;
+            border-radius: 5px;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            /*-webkit-filter: blur(3px);
+                    filter: blur(3px);*/
+        }
+
+        .center:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .top_text {
+            font-size: 18px;
+            margin-top: 10px;
+            width: 220px;
+            color: #383838;
+        }
+
+        .buttonLine {
+            justify-content: space-between;
+            align-self: center; /*字容器交叉轴。可覆盖父容器的align-items*/
+            display: flex;
+            flex-direction: row;
+        }
+
+        .buttonLine button {
+            margin: 20px;
+            background-color: #383838;
+        }
+
+        .form-control {
+            font-size: 18px;
+            border: 1px solid #555555;
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .topDiv {
+            height: 80px;
+            width: 100%;
+            background: #383838;
+            color: #aaa;
+            top: 0px;
+            position: fixed;
+        }
+
+        .footDiv {
+            height: 145px;
+            bottom: 0px;
+            position: fixed;
+        }
+
+        .logo-wrap img {
+            height: 50px;
+        }
+
+        .logo-wx img {
+            height: 90px;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="topDiv"></div>
+
+<div class="body_box">
+    <form action="/zcc/back.action" method="post" role="form" id="form-test">
+        <div class="center">
+            <div class="top_text">账号：</div>
+            <div class="line">
+                <div class="form-group">
+                    <input type="text" id="idcard" name="idcard" class="form-control"
+                           value="123" placeholder="请输入账号">
+                </div>
+            </div>
+            <div class="top_text">密码：</div>
+            <div class="line">
+                <div class="form-group">
+                    <input type="text" id="password" name="password" value="123"
+                           class="form-control" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="line buttonLine">
+                <button type="submit" id="btn-test" class="btn btn-primary">登录</button>
+                <button type="button" class="btn btn-primary" title="提示"
+                        data-container="body" data-toggle="popover" data-placement="right"
+                        data-content="尝试一下">提示
+                </button>
+            </div>
+
+        </div>
+    </form>
+
+</div>
+
+<!--底部-->
+<div class="footDiv">
+    <div class="credit">
+        <div class="foot_child">
+            <h1 class="logo-wrap">
+                <img src="dist/images/logo-zcc2.png">
+            </h1>
+            Copyright Zhengchengcheng <a href="http://www.beian.miit.gov.cn/"
+                                         target="_blank">皖ICP备18019895号</a>
+            <!--<div>-->
+            <!--<img alt="公安" src="dist/images/gongan.png"-->
+            <!--style="float: left; margin-right: 5px;"> <a target="_blank"-->
+            <!--href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34011102001437">-->
+            <!--<p>皖公网安备 34011102001437号</p>-->
+            <!--</a>-->
+            <!--</div>-->
+
+        </div>
+
+        <div class="foot_child">
+            <h1 class="logo-wx">
+                <img src="dist/images/main_wx.png">
+            </h1>
+            <p>扫描微信好友</p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
