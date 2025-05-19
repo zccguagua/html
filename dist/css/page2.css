@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+
+#top_line {
+	/*父容器*/
+	justify-content: flex-start;
+	/*设置自容器沿主轴排列flex-end,center,space-around(均匀分布)，space-between(两端相切)*/
+	align-items: flex-start;
+	/*设置交叉轴(上下轴),flex-end,center,baseline(基线),stretch(拉伸)*/
+	display: flex;
+	flex-direction: row; /*设置排列方向 row-revere,column,column-reverse*/
+}
+
+#top_line>input {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#top_line>button {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.input_width {
+	width: 150px;
+}
+/* 分页插件与bootstrap冲突a */
+#bottom_box {
+	font-size: 20px;
+}
+
+#bottom_box a {
+	width: 30px;
+	height: 38px;
+	border: 1px solid #ebebeb;
+	margin:5px;
+	line-height: 38px;
+	padding:5px;
+}
